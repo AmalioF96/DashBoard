@@ -8,7 +8,6 @@ import dash_core_components as dcc
 import dash_html_components as html
 
 from controlador.controlador import ControladorApp
-from prueba import definirLayout
 
 
 class view():
@@ -16,12 +15,12 @@ class view():
     def __init__(self,app):
         self.controler = ControladorApp()
         self.app=app
-        definirLayout()
+        self.definirLayout()
     
     def mostrarTodo(self):
         
         self.app.layout = html.Div(children=[
-        html.H1(children='Ventas por dia de la semana'),
+        html.H1(children='DashBoard UPO'),
     
         html.Div(children='''
             Dash: Amalio y Rafa

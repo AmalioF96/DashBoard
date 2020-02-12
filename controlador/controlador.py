@@ -45,17 +45,13 @@ class ControladorApp(object):
 
     def cargarProductosMasVendidosLosMiercoles(self):
         result = list(Connection.productosMasVendidosLosMiercoles(self))
-        print(result)
         i = 0;
         matriz = [[0]*10,[0]*10];
-        print(matriz)
         for record in result:
-            print("--->", record)
             matriz[0][i] = "marca:"+record["marca"]
             matriz[1][i] = record["cm"]
             i += 1
 
-        print(matriz)
 
         return matriz
 
