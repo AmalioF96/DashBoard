@@ -27,13 +27,21 @@ class view():
             Dash: Amalio y Rafa
         '''),
         html.Div(
-            [self.graphVentasDiasSemana("1")]
-            , style={'width': '49%', 'float': 'right', 'display': 'inline-block'}
+            [self.graphVentasDiasSemana("1","line")]
+            , style={'width': '49%', 'float': 'left', 'display': 'inline-block'}
                  ),
         html.Div(
-            [self.graphVentasDiasSemana("2","line")]
-            , style={'width': '49%', 'float': 'right', 'display': 'inline-block'}
-            )
+            [self.graphVentasDiasSemana("2")]
+            , style={'width': '49%', 'float': 'left', 'display': 'inline-block'}
+                 ),
+        html.Div(
+            [self.graphGastoDiasSemana("3")]
+            , style={'width': '49%', 'float': 'left', 'display': 'inline-block'}
+            ),
+        html.Div(
+            [self.graphMarcasMasVendidasMiercoles("4")]
+            , style={'width': '49%', 'float': 'left', 'display': 'inline-block'}
+                 )
     ])
         return 0;
         
@@ -92,7 +100,37 @@ class view():
                     {'x': m[0], 'y': m[1], 'type': type, 'name': 'count'},
                 ],
                 'layout': {
-                    'title': 'Dash Data Visualization'
+                    'title': 'Numero de ventas por dia de la semana'
+                }
+            }
+        )
+        return x
+    
+    def graphGastoDiasSemana(self,id,type='bar'):
+        m = self.controler.cargarGastosDiasSemana()
+        x=dcc.Graph(
+            id='example-graph'+id,
+            figure={
+                'data': [
+                    {'x': m[0], 'y': m[1], 'type': type, 'name': 'count'},
+                ],
+                'layout': {
+                    'title': 'Gasto por dia de la semana'
+                }
+            }
+        )
+        return x
+
+    def graphMarcasMasVendidasMiercoles(self,id,type='bar'):
+        m = self.controler.cargarProductosMasVendidosLosMiercoles()
+        x=dcc.Graph(
+            id='example-graph'+id,
+            figure={
+                'data': [
+                    {'x': m[0], 'y': m[1], 'type': type, 'name': 'count'},
+                ],
+                'layout': {
+                    'title': 'Marcas mas compradas los miercoles'
                 }
             }
         )
