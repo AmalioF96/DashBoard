@@ -27,6 +27,7 @@
 
 from .enums import MachineState
 
+
 HZ_CLS = (
 1,0,0,0,0,0,0,0,  # 00 - 07
 0,0,0,0,0,0,0,0,  # 08 - 0f

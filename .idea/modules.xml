@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/testDjango.iml" filepath="$PROJECT_DIR$/.idea/testDjango.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DashBoard.iml" filepath="$PROJECT_DIR$/.idea/DashBoard.iml" />
     </modules>
   </component>
 </project>

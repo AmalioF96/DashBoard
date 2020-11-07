@@ -3,6 +3,7 @@
 import re
 import sys
 
+
 # for compatibility with easy_install; see #2198
 __requires__ = 'Twisted==20.3.0'
 

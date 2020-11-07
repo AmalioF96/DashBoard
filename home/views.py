@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from plotly.offline import plot
-import plotly.graph_objs as go
 import home.models as m
+import plotly.graph_objs as go
+from plotly.offline import plot
+
 
 # Create your views here.
-
 def home(requests):
 
     def scatter():

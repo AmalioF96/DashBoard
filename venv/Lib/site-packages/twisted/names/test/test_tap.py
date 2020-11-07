@@ -17,7 +17,6 @@ from twisted.python.usage import UsageError
 from twisted.trial.unittest import SynchronousTestCase
 
 
-
 class OptionsTests(SynchronousTestCase):
     """
     Tests for L{Options}, defining how command line arguments for the DNS server

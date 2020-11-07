@@ -29,6 +29,7 @@
 from .charsetprober import CharSetProber
 from .enums import ProbingState
 
+
 FREQ_CAT_NUM = 4
 
 UDF = 0  # undefined

@@ -27,8 +27,8 @@
 
 from .enums import MachineState
 
-# BIG5
 
+# BIG5
 BIG5_CLS = (
     1,1,1,1,1,1,1,1,  # 00 - 07    #allow 0x00 as legal value
     1,1,1,1,1,1,0,0,  # 08 - 0f

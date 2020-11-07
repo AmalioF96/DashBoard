@@ -1,10 +1,11 @@
 from __future__ import absolute_import
-import time
-import logging
+
 from collections import namedtuple
-from itertools import takewhile
 import email
+from itertools import takewhile
+import logging
 import re
+import time
 
 from ..exceptions import (
     ConnectTimeoutError,

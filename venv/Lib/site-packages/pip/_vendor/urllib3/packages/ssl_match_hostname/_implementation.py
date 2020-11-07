@@ -6,6 +6,7 @@
 import re
 import sys
 
+
 # ipaddress has been backported to 2.6+ in pypi.  If it is installed on the
 # system, use it to handle IPAddress ServerAltnames (this was added in
 # python-3.5) otherwise only do DNS matching.  This allows

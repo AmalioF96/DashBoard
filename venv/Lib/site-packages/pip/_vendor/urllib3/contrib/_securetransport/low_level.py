@@ -10,8 +10,8 @@ appropriate and useful assistance to the higher-level code.
 import base64
 import ctypes
 import itertools
-import re
 import os
+import re
 import ssl
 import tempfile
 
